@@ -116,6 +116,16 @@ resource "vsphere_virtual_machine" "vcsa" {
     }
   }
 
+  provisioner "local-exec" {
+    command = "${path.module}/vcsa-enable-ssh.sh "
+    environment = {
+      VCENTER_HOSTNAME = var.hostname
+      VAMI_USERNAME    = "root"
+      VAMI_PASSWORD    = random_password.root_password.result
+      ENABLE_SSH       = title(tostring(var.enable_ssh))
+    }
+  }
+
   lifecycle {
     ignore_changes = [
       // it looks like some of the properties get deleted from the VM after it is deployed
