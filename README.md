@@ -66,7 +66,7 @@ No Modules.
 
 | Name | Description |
 |------|-------------|
-| administrator\_password | n/a |
-| administrator\_user | n/a |
-| root\_password | n/a |
+| administrator\_password | The password of the default VMware SSO Administrator. |
+| administrator\_user | The full username of the default VMware SSO Administrator. |
+| root\_password | The root password that was generated for the vCenter Server Appliance. |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
