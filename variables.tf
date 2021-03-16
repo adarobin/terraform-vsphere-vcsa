@@ -103,8 +103,8 @@ variable "enable_ceip" {
 
 variable "enable_ssh" {
   type        = bool
-  default     = true
-  description = "Should SSH be enabled on the vCenter Server Appliance?"
+  default     = false
+  description = "Should SSH be enabled on the vCenter Server Appliance? Defaults to `false`."
 }
 
 variable "provisioner_timeout" {

@@ -46,7 +46,7 @@ No Modules.
 | deployment\_size | The deployment size of the vCenter Server Appliances.  Defaults to "tiny". | `string` | `"tiny"` | no |
 | dns | The DNS server(s) for the vCenter Server Appliance. This defaults to "" which results in DHCP being used. Must be set if a static IP is set in `ip_address`. | `string` | `""` | no |
 | enable\_ceip | Should the Customer Experience Improvement Program (CEIP) be enabled for the vCenter Server Appliance? Defaults to `false` | `bool` | `false` | no |
-| enable\_ssh | Should SSH be enabled on the vCenter Server Appliance? | `bool` | `true` | no |
+| enable\_ssh | Should SSH be enabled on the vCenter Server Appliance? Defaults to `false`. | `bool` | `false` | no |
 | folder\_name | The name of the vm folder the vCenter Server Appliance should be created in. | `string` | n/a | yes |
 | gateway | The gateway of the vCenter Server Appliance. This defaults to "" which results in DHCP being used. Must be set if a static IP is set in `ip_address` | `string` | `""` | no |
 | host\_system\_id | The ID of the host system that the vCenter Server Appliance OVA will be initially deployed on. | `string` | n/a | yes |
