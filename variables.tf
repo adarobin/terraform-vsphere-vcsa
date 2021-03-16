@@ -95,6 +95,12 @@ variable "sso_domain_name" {
   description = "The name of the internal SSO domain.  Defaults to \"vsphere.local\"."
 }
 
+variable "enable_ceip" {
+  type        = bool
+  default     = false
+  description = "Should the Customer Experience Improvement Program (CEIP) be enabled for the vCenter Server Appliance? Defaults to `false`"
+}
+
 variable "enable_ssh" {
   type        = bool
   default     = true

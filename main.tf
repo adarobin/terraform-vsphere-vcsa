@@ -90,6 +90,7 @@ resource "vsphere_virtual_machine" "vcsa" {
       "guestinfo.cis.appliance.net.gateway"     = var.gateway
       "guestinfo.cis.appliance.net.pnid"        = var.hostname
       "guestinfo.cis.appliance.root.passwd"     = random_password.root_password.result
+      "guestinfo.cis.ceip_enabled"              = title(tostring(var.enable_ceip))
     }
   }
 
