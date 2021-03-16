@@ -7,7 +7,11 @@ Presently, this module does not work with the official `terraform-provider-vsphe
 
 The module presently assumes you are deploying from a machine with `bash` and `curl` installed.
 
-The module has been tested with `VMware-vCenter-Server-Appliance-7.0.1.00200-17327517_OVF10.ova`.
+The module has been tested with:
+
+* `VMware-vCenter-Server-Appliance-7.0.1.00200-17327517_OVF10.ova`
+* `VMware-vCenter-Server-Appliance-7.0.2.00000-17694817_OVF10.ova`
+
 Other versions may or may not work correctly.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
