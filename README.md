@@ -2,10 +2,7 @@
 
 Terraform module which creates a vCenter Server Appliance virtual machine in a vSphere environment.
 
-Presently, this module does not work with the official `terraform-provider-vsphere`. You must compile the provider from
-[#1339](https://github.com/hashicorp/terraform-provider-vsphere/pull/1339).
-
-The module presently assumes you are deploying from a machine with `bash` and `curl` installed.
+The module presently assumes you are deploying from a machine with `bash`, `curl`, and `jq` installed.
 
 The module has been tested with:
 
@@ -20,13 +17,14 @@ Other versions may or may not work correctly.
 | Name | Version |
 |------|---------|
 | terraform | >= 0.13 |
+| vsphere | >= 1.25.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
 | random | n/a |
-| vsphere | n/a |
+| vsphere | >= 1.25.0 |
 
 ## Modules
 
